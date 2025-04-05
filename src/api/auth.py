@@ -10,7 +10,7 @@ from fastapi import (
 from sqlalchemy.orm import Session
 from fastapi.security import OAuth2PasswordRequestForm
 from src.schemas import UserCreate, Token, User, RequestEmail
-from src.services.auth import create_access_token, Hash
+from src.services.auth import create_access_token, Hash, get_email_from_token
 from src.services.users import UserService
 from src.database.db import get_db
 from src.services.email import send_email
